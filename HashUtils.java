@@ -1,3 +1,4 @@
+package andbook.example.myapplication;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
@@ -28,7 +29,7 @@ public abstract class HashUtils {
 
     public static final String bytesToHex(byte[] bytes) {
         final StringBuilder result = new StringBuilder();
-        for (byte byt : bytes) 
+        for (byte byt : bytes)
             result.append(Integer.toString((byt & 0xff) + 0x100, 16).substring(1));
         return result.toString();
     }
